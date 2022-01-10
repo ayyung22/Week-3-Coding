@@ -1,0 +1,150 @@
+let ages = ["3", "9", "23", "64", "2", "8", "28", "93"];
+let last = ages[ages.length - 1];
+let first = ages[ages.length - ages.length];
+let diff = last - first;
+console.log(diff);
+
+ages.push("821");
+let lastAge = ages[ages.length - 1];
+let firstAge = ages[ages.length - ages.length];
+let difference = lastAge - firstAge;
+console.log(difference);
+
+for (let i = 0; i < ages.length; i++) {
+  console.log(ages[i]);
+}
+
+var i,
+  sum = 0;
+for (i = 0; i < ages.length; i++) {
+  sum = sum + ages[i];
+}
+console.log(sum / ages.length);
+
+let names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+for (let i = 0; i < names.length; i++) {
+  console.log(names[i]);
+}
+
+sum = 0;
+for (i = 0; i < names.length; i++) {
+  sum = sum + names[i].length;
+}
+console.log(sum / names.length);
+
+let con = names[0];
+for (i = 1; i < names.length; i++) {
+  con = con.concat(" ", names[i]);
+}
+console.log(con);
+
+let array = ["1", "2", "3", "4"];
+let lastElement = array[array.length - 1];
+console.log(lastElement);
+
+var arr = ["1", "2", "3", "4"];
+var firstElement = arr[0];
+console.log(firstElement);
+
+let namesArray = ["Kelly", "Sam", "Kate"];
+for (let i = 0; i < namesArray.length; i++) {
+  console.log(namesArray[i]);
+}
+
+let nameLengths = ["5", "3", "4"];
+
+for (let i = 0; i < nameLengths.length; i++) {
+  console.log(nameLengths[i]);
+}
+
+function sumOfAll(arr) {
+  let sum = 0;
+  for (let a of arr) sum += a;
+  return sum;
+}
+console.log(sumOfAll([5, 3, 4]));
+
+function concat_q(word, n) {
+  let word2 = "";
+  for (let i = 0; i < 3; i++) {
+    word2 = word2.concat(word);
+  }
+  return word2;
+}
+console.log(concat_q("Annie", 3));
+
+function fullName(firstName, lastName) {
+  return firstName + " " + lastName;
+}
+var fullname = fullName("Daisy", "Waters");
+console.log(fullname);
+
+let arrays = [12, 14, 16, 18, 20, 22];
+
+function greaterThan100(array) {
+  sum_num = 0;
+  for (i = 0; i < array.length; i++) {
+    sum_num = sum_num + array[i];
+  }
+  return sum_num > 100;
+}
+
+console.log(greaterThan100(arrays));
+
+function averageNumbers(array) {
+  sum_num = 0;
+  for (i = 0; i < array.length; i++) {
+    sum_num = sum_num + array[i];
+  }
+
+  return sum_num / array.length;
+}
+
+console.log(averageNumbers(array));
+
+let arr1 = [20, 24, 26, 28];
+let arr2 = [2, 4, 6, 8];
+
+function averageOfNumbers(arr1) {
+  sum_num = 0;
+  for (i = 0; i < arr1.length; i++) {
+    sum_num = sum_num + arr1[i];
+  }
+  return sum_num / arr1.length;
+}
+console.log(averageOfNumbers(arr1));
+
+function averageOfNumbers2(arr2) {
+  sum_num = 0;
+  for (i = 0; i < arr2.length; i++) {
+    sum_num = sum_num + arr2[i];
+  }
+  return sum_num / arr2.length;
+}
+
+console.log(averageOfNumbers(arr2));
+
+function compare_average(arr1, arr2) {
+  if (averageOfNumbers(arr1) > averageOfNumbers(arr2)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(compare_average(arr1, arr2));
+
+function willBuyDrink(hot, money) {
+  if (hot == true && money > 10.5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(willBuyDrink(true, 11));
+
+let name = prompt("What's your name? ");
+function greet(name) {
+  console.log("Hello " + name + ":)");
+}
